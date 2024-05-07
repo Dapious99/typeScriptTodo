@@ -9,4 +9,4 @@ interface List {
   removeItem(id: string): void;
 }
 
-export class FullList implements List
+export class FullList implements List {}
