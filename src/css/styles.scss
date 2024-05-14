@@ -1,0 +1,14 @@
+$primaryColor: indianred;
+$secondaryColor: indigo;
+$fontsize: 18px;
+$fontfamily: Arial Helvetica sans-serif;
+// !global is used to make variables take a global scope even if it declared within a styling block.
+body{
+    background-color: $secondaryColor;
+    font-family: $fontfamily;
+}
+
+.dailyTodo{
+    text-align: center;
+    color: whitesmoke;
+}
