@@ -1,14 +1,36 @@
 $primaryColor: indianred;
-$secondaryColor: indigo;
-$fontsize: 18px;
+$secondaryColor: yellowgreen;
+$fontsize: 1.2rem;
 $fontfamily: Arial Helvetica sans-serif;
 // !global is used to make variables take a global scope even if it declared within a styling block.
-body{
-    background-color: $secondaryColor;
-    font-family: $fontfamily;
+body {
+  background-color: $secondaryColor;
+  font-family: $fontfamily;
 }
 
-.dailyTodo{
-    text-align: center;
-    color: whitesmoke;
+.dailyTodo {
+  text-align: center;
+  color: whitesmoke;
+}
+.new-item-head {
+  color: white;
+  text-align: center;
+  text-shadow: 2rem;
+}
+form {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  label {
+    font-size: 1.5rem;
+    color: white;
+  }
+  input {
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+  }
+  button {
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.3rem;
+  }
 }
