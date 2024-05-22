@@ -1,5 +1,7 @@
 $primaryColor: indianred;
 $secondaryColor: yellowgreen;
+$buttonColor: yellow;
+$buttonColorTwo: green;
 $fontsize: 1.2rem;
 $fontfamily: Arial Helvetica sans-serif;
 // !global is used to make variables take a global scope even if it declared within a styling block.
@@ -28,9 +30,48 @@ form {
   input {
     padding: 0.2rem 0.4rem;
     border-radius: 0.3rem;
+    border: none;
   }
   button {
     padding: 0.2rem 0.8rem;
     border-radius: 0.3rem;
+    border: none;
+    background: $buttonColorTwo;
+    color: $buttonColor;
+    cursor: pointer;
+    &:hover {
+      background: $buttonColor;
+      color: $buttonColorTwo;
+    }
+  }
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  ul {
+    border: 0.1rem solid black;
+    padding: 0.8rem 0.8rem;
+    list-style: none;
+  }
+}
+.listTitle {
+  h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  button {
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    background: $buttonColor;
+    color: $buttonColorTwo;
+    cursor: pointer;
+    &:hover {
+      background: $buttonColorTwo;
+      color: $buttonColor;
+    }
   }
 }
