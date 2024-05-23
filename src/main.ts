@@ -27,6 +27,8 @@ const initApp = (): void => {
 
     // create new item
     const newItem = new ListItem(itemId.toString(), newEntryText);
+    // Clear the input field
+    input.value = "";
     // Add new item to full list
     fullList.addItem(newItem);
     // Re-render list with new item included
