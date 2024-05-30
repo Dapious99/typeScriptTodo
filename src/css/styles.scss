@@ -6,7 +6,6 @@ $fontsize: 1.2rem;
 $fontfamily: Arial Helvetica sans-serif;
 // !global is used to make variables take a global scope even if it declared within a styling block.
 body {
-  background-color: $secondaryColor;
   font-family: $fontfamily;
 }
 
